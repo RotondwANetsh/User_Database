@@ -3,13 +3,13 @@ import java.util.regex.Pattern;
 
 public class Validate {
     public void nameValid(String name) throws ThrowException {
-        if(!Pattern.matches("[a-zA-Z]+$", name)){
+        if(!Pattern.matches("^[a-zA-Z]+$", name)){
             throw new ThrowException("");
         }
     }
 
     public void surnameValid(String surname) throws ThrowException {
-        if(!Pattern.matches("[a-zA-Z]+$", surname)){
+        if(!Pattern.matches("^[a-zA-Z]+$", surname)){
             throw new ThrowException("");
         }
     }
